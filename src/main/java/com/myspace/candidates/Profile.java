@@ -6,12 +6,140 @@ package com.myspace.candidates;
 
 public class Profile implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Profile() {
-    }
+	@org.kie.api.definition.type.Label(value = "Name")
+	private java.lang.String name;
+	@org.kie.api.definition.type.Label(value = "Work Phone Number")
+	private java.lang.String workNumber;
+	@org.kie.api.definition.type.Label(value = "Home  / Mobile Phone Number")
+	private java.lang.String otherNumber;
+	@org.kie.api.definition.type.Label(value = "E-mail")
+	private java.lang.String email;
+	@org.kie.api.definition.type.Label(value = "Veterinary Council Number")
+	private java.lang.String vetCouncilNumber;
+	@org.kie.api.definition.type.Label(value = "Home Address")
+	private java.lang.String homeAddress;
+	@org.kie.api.definition.type.Label(value = "Correspondence Address")
+	private java.lang.String otherAddress;
+	@org.kie.api.definition.type.Label(value = "Gender")
+	private java.lang.String gender;
+	@org.kie.api.definition.type.Label(value = "Date Of Birth")
+	private java.lang.String dob;
+	@org.kie.api.definition.type.Label(value = "Special Facilities")
+	private java.lang.Boolean specialFacilities;
+	@org.kie.api.definition.type.Label(value = "Special Facilities Details")
+	private java.lang.String specialFacilitiesDetails;
 
+	public Profile() {
+	}
 
+	public java.lang.String getName() {
+		return this.name;
+	}
 
+	public void setName(java.lang.String name) {
+		this.name = name;
+	}
+
+	public java.lang.String getWorkNumber() {
+		return this.workNumber;
+	}
+
+	public void setWorkNumber(java.lang.String workNumber) {
+		this.workNumber = workNumber;
+	}
+
+	public java.lang.String getOtherNumber() {
+		return this.otherNumber;
+	}
+
+	public void setOtherNumber(java.lang.String otherNumber) {
+		this.otherNumber = otherNumber;
+	}
+
+	public java.lang.String getEmail() {
+		return this.email;
+	}
+
+	public void setEmail(java.lang.String email) {
+		this.email = email;
+	}
+
+	public java.lang.String getVetCouncilNumber() {
+		return this.vetCouncilNumber;
+	}
+
+	public void setVetCouncilNumber(java.lang.String vetCouncilNumber) {
+		this.vetCouncilNumber = vetCouncilNumber;
+	}
+
+	public java.lang.String getHomeAddress() {
+		return this.homeAddress;
+	}
+
+	public void setHomeAddress(java.lang.String homeAddress) {
+		this.homeAddress = homeAddress;
+	}
+
+	public java.lang.String getOtherAddress() {
+		return this.otherAddress;
+	}
+
+	public void setOtherAddress(java.lang.String otherAddress) {
+		this.otherAddress = otherAddress;
+	}
+
+	public java.lang.String getGender() {
+		return this.gender;
+	}
+
+	public void setGender(java.lang.String gender) {
+		this.gender = gender;
+	}
+
+	public java.lang.String getDob() {
+		return this.dob;
+	}
+
+	public void setDob(java.lang.String dob) {
+		this.dob = dob;
+	}
+
+	public java.lang.Boolean getSpecialFacilities() {
+		return this.specialFacilities;
+	}
+
+	public void setSpecialFacilities(java.lang.Boolean specialFacilities) {
+		this.specialFacilities = specialFacilities;
+	}
+
+	public java.lang.String getSpecialFacilitiesDetails() {
+		return this.specialFacilitiesDetails;
+	}
+
+	public void setSpecialFacilitiesDetails(
+			java.lang.String specialFacilitiesDetails) {
+		this.specialFacilitiesDetails = specialFacilitiesDetails;
+	}
+
+	public Profile(java.lang.String name, java.lang.String workNumber,
+			java.lang.String otherNumber, java.lang.String email,
+			java.lang.String vetCouncilNumber, java.lang.String homeAddress,
+			java.lang.String otherAddress, java.lang.String gender,
+			java.lang.String dob, java.lang.Boolean specialFacilities,
+			java.lang.String specialFacilitiesDetails) {
+		this.name = name;
+		this.workNumber = workNumber;
+		this.otherNumber = otherNumber;
+		this.email = email;
+		this.vetCouncilNumber = vetCouncilNumber;
+		this.homeAddress = homeAddress;
+		this.otherAddress = otherAddress;
+		this.gender = gender;
+		this.dob = dob;
+		this.specialFacilities = specialFacilities;
+		this.specialFacilitiesDetails = specialFacilitiesDetails;
+	}
 
 }
