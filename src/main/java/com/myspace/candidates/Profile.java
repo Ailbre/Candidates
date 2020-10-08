@@ -8,28 +8,31 @@ public class Profile implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "Name")
+	@org.kie.api.definition.type.Label("Name")
 	private java.lang.String name;
-	@org.kie.api.definition.type.Label(value = "Work Phone Number")
+	@org.kie.api.definition.type.Label("Work Phone Number")
 	private java.lang.String workNumber;
-	@org.kie.api.definition.type.Label(value = "Home  / Mobile Phone Number")
+	@org.kie.api.definition.type.Label("Home  / Mobile Phone Number")
 	private java.lang.String otherNumber;
-	@org.kie.api.definition.type.Label(value = "E-mail")
+	@org.kie.api.definition.type.Label("E-mail")
 	private java.lang.String email;
-	@org.kie.api.definition.type.Label(value = "Veterinary Council Number")
+	@org.kie.api.definition.type.Label("Veterinary Council Number")
 	private java.lang.String vetCouncilNumber;
-	@org.kie.api.definition.type.Label(value = "Home Address")
+	@org.kie.api.definition.type.Label("Home Address")
 	private java.lang.String homeAddress;
-	@org.kie.api.definition.type.Label(value = "Correspondence Address")
+	@org.kie.api.definition.type.Label("Correspondence Address")
 	private java.lang.String otherAddress;
-	@org.kie.api.definition.type.Label(value = "Gender")
+	@org.kie.api.definition.type.Label("Gender")
 	private java.lang.String gender;
-	@org.kie.api.definition.type.Label(value = "Date Of Birth")
+	@org.kie.api.definition.type.Label("Date Of Birth")
 	private java.lang.String dob;
-	@org.kie.api.definition.type.Label(value = "Special Facilities")
+	@org.kie.api.definition.type.Label("Special Facilities")
 	private java.lang.Boolean specialFacilities;
-	@org.kie.api.definition.type.Label(value = "Special Facilities Details")
+	@org.kie.api.definition.type.Label("Special Facilities Details")
 	private java.lang.String specialFacilitiesDetails;
+
+	@org.kie.api.definition.type.Label(value = "Interests")
+	private com.myspace.candidates.Interests interests;
 
 	public Profile() {
 	}
@@ -123,12 +126,21 @@ public class Profile implements java.io.Serializable {
 		this.specialFacilitiesDetails = specialFacilitiesDetails;
 	}
 
+	public com.myspace.candidates.Interests getInterests() {
+		return this.interests;
+	}
+
+	public void setInterests(com.myspace.candidates.Interests interests) {
+		this.interests = interests;
+	}
+
 	public Profile(java.lang.String name, java.lang.String workNumber,
 			java.lang.String otherNumber, java.lang.String email,
 			java.lang.String vetCouncilNumber, java.lang.String homeAddress,
 			java.lang.String otherAddress, java.lang.String gender,
 			java.lang.String dob, java.lang.Boolean specialFacilities,
-			java.lang.String specialFacilitiesDetails) {
+			java.lang.String specialFacilitiesDetails,
+			com.myspace.candidates.Interests interests) {
 		this.name = name;
 		this.workNumber = workNumber;
 		this.otherNumber = otherNumber;
@@ -140,6 +152,7 @@ public class Profile implements java.io.Serializable {
 		this.dob = dob;
 		this.specialFacilities = specialFacilities;
 		this.specialFacilitiesDetails = specialFacilitiesDetails;
+		this.interests = interests;
 	}
 
 }
