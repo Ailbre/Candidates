@@ -6,12 +6,105 @@ package com.myspace.candidates;
 
 public class Interests implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Interests() {
-    }
+	@org.kie.api.definition.type.Label(value = "Administration")
+	private java.lang.Boolean administration;
+	@org.kie.api.definition.type.Label(value = "Veterinary")
+	private java.lang.Boolean veterinary;
+	@org.kie.api.definition.type.Label(value = "Laboratory")
+	private java.lang.Boolean laboratory;
+	@org.kie.api.definition.type.Label(value = "Inspectorate (Science Based)")
+	private java.lang.Boolean inspectorate;
+	@org.kie.api.definition.type.Label(value = "Technical (agriculture/horticulture")
+	private java.lang.Boolean technical;
+	@org.kie.api.definition.type.Label(value = "Forestry")
+	private java.lang.Boolean forestry;
+	@org.kie.api.definition.type.Label(value = "Marine (including engineering, technician)")
+	private java.lang.Boolean marine;
+	@org.kie.api.definition.type.Label(value = "Services Officer/Craftsperson/General Operative")
+	private java.lang.Boolean servicesCraftGeneral;
 
+	public Interests() {
+	}
 
+	public java.lang.Boolean getAdministration() {
+		return this.administration;
+	}
 
+	public void setAdministration(java.lang.Boolean administration) {
+		this.administration = administration;
+	}
+
+	public java.lang.Boolean getVeterinary() {
+		return this.veterinary;
+	}
+
+	public void setVeterinary(java.lang.Boolean veterinary) {
+		this.veterinary = veterinary;
+	}
+
+	public java.lang.Boolean getLaboratory() {
+		return this.laboratory;
+	}
+
+	public void setLaboratory(java.lang.Boolean laboratory) {
+		this.laboratory = laboratory;
+	}
+
+	public java.lang.Boolean getInspectorate() {
+		return this.inspectorate;
+	}
+
+	public void setInspectorate(java.lang.Boolean inspectorate) {
+		this.inspectorate = inspectorate;
+	}
+
+	public java.lang.Boolean getTechnical() {
+		return this.technical;
+	}
+
+	public void setTechnical(java.lang.Boolean technical) {
+		this.technical = technical;
+	}
+
+	public java.lang.Boolean getForestry() {
+		return this.forestry;
+	}
+
+	public void setForestry(java.lang.Boolean forestry) {
+		this.forestry = forestry;
+	}
+
+	public java.lang.Boolean getMarine() {
+		return this.marine;
+	}
+
+	public void setMarine(java.lang.Boolean marine) {
+		this.marine = marine;
+	}
+
+	public java.lang.Boolean getServicesCraftGeneral() {
+		return this.servicesCraftGeneral;
+	}
+
+	public void setServicesCraftGeneral(java.lang.Boolean servicesCraftGeneral) {
+		this.servicesCraftGeneral = servicesCraftGeneral;
+	}
+
+	public Interests(java.lang.Boolean administration,
+			java.lang.Boolean veterinary, java.lang.Boolean laboratory,
+			java.lang.Boolean inspectorate, java.lang.Boolean technical,
+			java.lang.Boolean forestry, java.lang.Boolean marine,
+			java.lang.Boolean servicesCraftGeneral) {
+		this.administration = administration;
+		this.veterinary = veterinary;
+		this.laboratory = laboratory;
+		this.inspectorate = inspectorate;
+		this.technical = technical;
+		this.forestry = forestry;
+		this.marine = marine;
+		this.servicesCraftGeneral = servicesCraftGeneral;
+	}
 
 }
