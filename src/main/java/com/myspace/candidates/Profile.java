@@ -31,8 +31,11 @@ public class Profile implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Special Facilities Details")
 	private java.lang.String specialFacilitiesDetails;
 
-	@org.kie.api.definition.type.Label(value = "Interests")
+	@org.kie.api.definition.type.Label("Interests")
 	private com.myspace.candidates.Interests interests;
+
+	@org.kie.api.definition.type.Label(value = "Applications")
+	private java.util.List<com.myspace.candidates.Competitions> applications;
 
 	public Profile() {
 	}
@@ -134,13 +137,23 @@ public class Profile implements java.io.Serializable {
 		this.interests = interests;
 	}
 
+	public java.util.List<com.myspace.candidates.Competitions> getApplications() {
+		return this.applications;
+	}
+
+	public void setApplications(
+			java.util.List<com.myspace.candidates.Competitions> applications) {
+		this.applications = applications;
+	}
+
 	public Profile(java.lang.String name, java.lang.String workNumber,
 			java.lang.String otherNumber, java.lang.String email,
 			java.lang.String vetCouncilNumber, java.lang.String homeAddress,
 			java.lang.String otherAddress, java.lang.String gender,
 			java.lang.String dob, java.lang.Boolean specialFacilities,
 			java.lang.String specialFacilitiesDetails,
-			com.myspace.candidates.Interests interests) {
+			com.myspace.candidates.Interests interests,
+			java.util.List<com.myspace.candidates.Competitions> applications) {
 		this.name = name;
 		this.workNumber = workNumber;
 		this.otherNumber = otherNumber;
@@ -153,6 +166,7 @@ public class Profile implements java.io.Serializable {
 		this.specialFacilities = specialFacilities;
 		this.specialFacilitiesDetails = specialFacilitiesDetails;
 		this.interests = interests;
+		this.applications = applications;
 	}
 
 }
