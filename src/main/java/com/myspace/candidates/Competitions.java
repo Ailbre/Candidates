@@ -8,7 +8,24 @@ public class Competitions implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
+	@org.kie.api.definition.type.Label(value = "Competition")
+	private java.util.List<com.myspace.candidates.Competition> competition;
+
 	public Competitions() {
+	}
+
+	public java.util.List<com.myspace.candidates.Competition> getCompetition() {
+		return this.competition;
+	}
+
+	public void setCompetition(
+			java.util.List<com.myspace.candidates.Competition> competition) {
+		this.competition = competition;
+	}
+
+	public Competitions(
+			java.util.List<com.myspace.candidates.Competition> competition) {
+		this.competition = competition;
 	}
 
 }
