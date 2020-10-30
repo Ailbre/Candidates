@@ -6,12 +6,35 @@ package com.myspace.candidates;
 
 public class competition implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public competition() {
-    }
+	@org.kie.api.definition.type.Label(value = "Competition ID")
+	private java.lang.String id;
+	@org.kie.api.definition.type.Label(value = "Competition Name")
+	private java.lang.String name;
 
+	public competition() {
+	}
 
+	public java.lang.String getId() {
+		return this.id;
+	}
 
+	public void setId(java.lang.String id) {
+		this.id = id;
+	}
+
+	public java.lang.String getName() {
+		return this.name;
+	}
+
+	public void setName(java.lang.String name) {
+		this.name = name;
+	}
+
+	public competition(java.lang.String id, java.lang.String name) {
+		this.id = id;
+		this.name = name;
+	}
 
 }
